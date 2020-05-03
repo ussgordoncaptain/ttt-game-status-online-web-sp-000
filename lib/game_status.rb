@@ -55,5 +55,6 @@ def over?(board)
 end 
 
 def winner(board)
-  board_state= won?(board)
+  win_node= won?(board)
+  
 end
