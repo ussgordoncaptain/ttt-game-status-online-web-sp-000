@@ -58,6 +58,9 @@ end
 
 def winner(board)
   win_arr= won?(board)
+  if (win_arr == false)
+    return nil 
+  end 
   win_node= win_arr[0]
   win_piece = board[win_node]
   return win_piece
