@@ -55,6 +55,8 @@ def over?(board)
 end 
 
 def winner(board)
-  win_node= won?(board)
-  
+  win_arr= won?(board)
+  win_node= win_arr[0]
+  win_piece = board[win_node]
+  return win_piece
 end
